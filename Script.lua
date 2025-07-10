@@ -113,7 +113,7 @@ MainTab:CreateButton({
 
 -- ESP Toggle
 MainTab:CreateToggle({
-    Name = "Player ESP",
+    Name = "Esp players",
     CurrentValue = false,
     Flag = "esp_toggle",
     Callback = function(enabled)
@@ -163,7 +163,7 @@ end)
 
 -- Server Controls
 ServerTab:CreateButton({
-    Name = "Rejoin Server",
+    Name = "Rejoin the Server",
     Callback = function()
         TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, Player)
     end
