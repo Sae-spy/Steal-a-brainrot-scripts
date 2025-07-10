@@ -103,7 +103,7 @@ MainTab:CreateButton({
             local cloak = Character:FindFirstChild("Invisibility Cloak")
             if cloak and cloak:GetAttribute("SpeedModifier") == 2 then
                 cloak.Parent = workspace
-                Rayfield:Notify({Title="HOKALAZA",Content="Cloak dropped for invisibility.",Duration=2})
+                Rayfield:Notify({Title="SOULSHUB",Content="Cloak dropped for invisibility.",Duration=2})
             else
                 Rayfield:Notify({Title="Error",Content="You need to wear an Invisibility Cloak first!",Duration=2})
             end
@@ -124,15 +124,15 @@ MainTab:CreateToggle({
                     local root = p.Character and p.Character:FindFirstChild("HumanoidRootPart")
                     if root and not ESPInstances[p] then
                         local bb = Instance.new("BillboardGui", root)
-                        bb.Name = "HOKALAZA_ESP"
-                        bb.Size = UDim2.new(0,100,0,25)
+                        bb.Name = "SOULS_ESP"
+                        bb.Size = UDim2.new(0,125,0,25)
                         bb.AlwaysOnTop = true
                         bb.Adornee = root
                         local lbl = Instance.new("TextLabel", bb)
                         lbl.Size = UDim2.new(1,0,1,0)
                         lbl.BackgroundTransparency = 1
                         lbl.Text = p.DisplayName
-                        lbl.TextColor3 = Color3.new(1,1,0)
+                        lbl.TextColor3 = Color3.new(1,0,0)
                         lbl.TextScaled = true
                         ESPInstances[p] = bb
                     end
