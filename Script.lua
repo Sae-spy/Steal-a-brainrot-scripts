@@ -38,7 +38,7 @@ local DiscordTab = Window:CreateTab("Discord")
 
 -- Moon Gravity
 MainTab:CreateToggle({
-    Name = "Moon Gravity",
+    Name = "Gravity",
     CurrentValue = false,
     Flag = "moon_toggle",
     Callback = function(value)
@@ -179,7 +179,7 @@ ServerTab:CreateButton({
                 return
             end
         end
-        Rayfield:Notify({Title="HOKALAZA",Content="No servers found or all are full.",Duration=2})
+        Rayfield:Notify({Title="Souls hub",Content="No servers found or all servers are full.",Duration=2})
     end
 })
 
